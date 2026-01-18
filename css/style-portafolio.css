@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Rem equivale a 16 px y 0.5rem es 8px*/
+/*Variables*/
+:root {
+    /*Colores*/
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+    /*Fuentes*/
+    --fuente-montserrat: 'Montserrat', sans-serif;
+    --fuente-krona: 'Krona One', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 10%;
+}
+
+.header-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+}
+
+.presentacion {
+    padding: 6% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion-contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion-contenido-titulo {
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+
+.strong-h1-titulo-destac {
+    color: var(--color-terciario);
+}
+
+.presentacion-contenido-texto {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+}
+
+.presentacion-enlaces {
+    display: flex;
+    /* coloca los cuadrados uno al lado del otro */
+    justify-content: space-between;
+    /* Al agregar la propiedad flex-direction: column, los cuadrados se posicionan verticalmente, ya que define que la dirección del display: flex debe ser en "columna".*/
+    flex-direction: column;
+    /* Define la dirección de los elementos flexibles como columna */
+    align-items: center;
+    /* Alinea los elementos flexibles horizontalmente al centro del contenedor */
+    gap: 32px;
+    /* agrega espacios iguales entre cada cuadrado */
+}
+
+
+.presentacion-enlaces-subtitulo {
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion-enlaces-link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--color-terciario);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-secundaria);
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion-enlaces-link:hover {
+    background-color: var(--color-hover);
+}
+
+
+.imagen-principal {
+    width: 35%;
+    margin-left: 5%;
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 2% 0% 0% 10%;
+    }
+
+    .header-menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion-contenido {
+        width: 100%;
+
+    }
+}
