@@ -1,61 +1,298 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+/* Variables CSS para mejor mantenimiento */
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
 
 * {
     padding: 0;
-    margin:0;
-}
-
-body{
-    height: 100vh;
+    margin: 0;
     box-sizing: border-box;
-    background-color: #000000;
-    color: #F6F6F6;
 }
 
-
-.titulo-destaque {
-    color: #22D4FD; ;
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* HEADER */
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header-menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+
+/* MAIN - PRESENTACION */
 .presentacion {
-    margin: 10% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
+    flex: 1;
 }
 
-.presentacion__contenido{
-    width: 615px;
+.presentacion-contenido {
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.presentacion__contenido__titulo{
-    font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+.presentacion-contenido-titulo {
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+    line-height: 1.2;
 }
 
-.presentacion__contenido__texto{
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+.strong-h1-titulo-destac {
+    color: var(--color-terciario);
 }
 
-.presentacion__enlaces{
+.presentacion-contenido-texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+    line-height: 1.5;
+}
+
+/* ENLACES */
+.presentacion-enlaces {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
 
-.presentacion__enlaces__link{
-    background-color: #22D4FD;
-    width: 280px;
+.presentacion-enlaces-subtitulo {
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.presentacion-enlaces-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 70%;
     text-align: center;
-    border-radius: 16px;
-    font-size: 24px;
+    border-radius: 8px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #000000;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--color-secundario);
+    font-family: var(--fuente-montserrat);
+    border: 2px solid var(--color-terciario);
+    transition: all 0.3s ease;
+}
+
+.presentacion-enlaces-link:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+.presentacion-enlaces-link img {
+    width: 32px;
+    height: 32px;
+}
+
+/* IMAGEN */
+.imagen-principal {
+    width: 40%;
+    height: auto;
+    border-radius: 50%;  /* Esto hace el círculo */
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border: 6px solid #22D4FD;  /* El círculo azul */
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color-terciario);
+    padding: 24px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.texto-footer {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--color-primario);
+}
+
+/* === MEDIA QUERIES - DISEÑO RESPONSIVE === */
+
+/* Tablets */
+@media screen and (max-width: 1200px) {
+    .header {
+        padding: 6% 0% 0% 8%;
+    }
+    
+    .header-menu {
+        gap: 40px;
+    }
+    
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5% 8%;
+        gap: 40px;
+    }
+    
+    .presentacion-contenido {
+        width: 100%;
+    }
+    
+    .presentacion-contenido-titulo {
+        font-size: 2rem;
+    }
+    
+    .presentacion-contenido-texto {
+        font-size: 1.25rem;
+    }
+    
+    .presentacion-enlaces-link {
+        width: 50%;
+    }
+    
+    .imagen-principal {
+        width: 60%;
+    }
+}
+
+/* Móviles grandes */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 10% 0% 0% 5%;
+    }
+    
+    .header-menu {
+        gap: 20px;
+    }
+    
+    .header-menu-link {
+        font-size: 1.25rem;
+    }
+    
+    .presentacion {
+        padding: 5% 5%;
+    }
+    
+    .presentacion-contenido-titulo {
+        font-size: 1.75rem;
+    }
+    
+    .presentacion-contenido-texto {
+        font-size: 1.125rem;
+    }
+    
+    .presentacion-enlaces-subtitulo {
+        font-size: 1.25rem;
+    }
+    
+    .presentacion-enlaces-link {
+        width: 80%;
+        font-size: 1.25rem;
+        padding: 16px 0;
+    }
+    
+    .imagen-principal {
+        width: 80%;
+    }
+    
+    .texto-footer {
+        font-size: 1.125rem;
+    }
+}
+
+/* Móviles pequeños */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 15% 0% 0% 5%;
+    }
+    
+    .header-menu {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .header-menu-link {
+        font-size: 1rem;
+    }
+    
+    .presentacion-contenido-titulo {
+        font-size: 1.5rem;
+    }
+    
+    .presentacion-contenido-texto {
+        font-size: 1rem;
+    }
+    
+    .presentacion-enlaces-subtitulo {
+        font-size: 1.125rem;
+    }
+    
+    .presentacion-enlaces-link {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+    
+    .presentacion-enlaces-link img {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .imagen-principal {
+        width: 100%;
+    }
+    
+    .texto-footer {
+        font-size: 0.875rem;
+    }
+}
+
+/* Ajustes para pantallas muy grandes */
+@media screen and (min-width: 1600px) {
+    .presentacion {
+        padding: 5% 20%;
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+    
+    .presentacion-contenido-titulo {
+        font-size: 2.75rem;
+    }
+    
+    .presentacion-contenido-texto {
+        font-size: 1.75rem;
+    }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    .presentacion-enlaces-link {
+        transition: none;
+    }
 }
