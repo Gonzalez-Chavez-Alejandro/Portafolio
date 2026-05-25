@@ -1,42 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>Portafolio profesional | Alejandro González Chávez</title>
     <link rel="stylesheet" href="./css/style-portafolio.css">
 </head>
 
 <body>
     <header class="header">
-        <nav class="header-menu">
-            <a class="header-menu-link" href="certificados.html">Home</a>
-            <a class="header-menu-link" href="about.html">Sobre mí</a>
+        <div class="header-container">
+            <a class="brand" href="index.html">Alejandro G.</a>
+            <nav class="header-menu">
+                <a class="header-menu-link" href="index.html">Inicio</a>
+                <a class="header-menu-link" href="about.html">Sobre mí</a>
+                <a class="header-menu-link" href="certificados.html">Certificados</a>
+                <a class="header-menu-link" href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <main class="presentacion">
-        <section class="presentacion-contenido">
-            <h1 class="presentacion-contenido-titulo">Desarrollo
-                <strong class="strong-h1-titulo-destac">aplicaciones web y apps </strong>modernas y escalables.
-            </h1>
-            <p class="presentacion-contenido-texto">¡Hola! Soy Alejandro González Chávez.
-                Desarrollador Full Stack con especialización en desarrollo web y aplicaciones, con alto interés en
-                Front-End y experiencia de usuario (UX).
-                ¿Hablamos?</p>
-            <div class="presentacion-enlaces">
-                <h2 class="presentacion-enlaces-subtitulo">Accede a mis redes:</h2>
-                <a class="presentacion-enlaces-link" href="https://github.com/"> <img src="./assets/github.png"
-                        alt="Imagen de Github"> Github</a>
-                <a class="presentacion-enlaces-link" href="https://www.instagram.com/"><img src="./assets/linkedin.png"
-                        alt="Imagen de Linkedin"> Linkedin</a>
-                <a class="presentacion-enlaces-link" href="https://www.instagram.com/"><img src="./assets/instagram.png"
-                        alt="Imagen de WhatsApp"> WhatsApp</a>
+
+    <main>
+        <section class="hero">
+            <div class="hero-texto">
+                <span class="hero-rol">Desarrollador Full Stack & Diseñador UX</span>
+                <h1>Creo experiencias digitales modernas y <strong>resonantes</strong>.</h1>
+                <p>Hola, soy Alejandro González Chávez. Combino diseño, desarrollo front-end y back-end para entregar sitios web y aplicaciones móviles con alto impacto visual y usabilidad.</p>
+                <div class="hero-botones">
+                    <a class="boton boton-principal" href="https://wa.me/3531279557">Enviar WhatsApp</a>
+                    <a class="boton boton-secundario" href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">Ver LinkedIn</a>
+                </div>
+                <div class="hero-destacados">
+                    <div>
+                        <strong>+5</strong>
+                        <span>Proyectos completados</span>
+                    </div>
+                    <div>
+                        <strong>UX/UI</strong>
+                        <span>Enfoque centrado en el usuario</span>
+                    </div>
+                    <div>
+                        <strong>React</strong>
+                        <span>Interfaces rápidas y responsivas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-imagen">
+                <img src="./img/animate.png" alt="Ilustración de desarrollo web moderno">
             </div>
         </section>
-        <img class="imagen-principal" src="./img/animate.png" alt="Imagen de Portafolio">
+
+        <section class="servicios">
+            <h2>Qué hago</h2>
+            <p>Desarrollo soluciones digitales que funcionan bien en todas las pantallas y ayudan a las marcas a crecer.</p>
+            <div class="servicios-grid">
+                <article class="servicio-card">
+                    <h3>Desarrollo Web</h3>
+                    <p>Construyo sitios y apps con HTML, CSS, JavaScript, React y APIs confiables.</p>
+                </article>
+                <article class="servicio-card">
+                    <h3>Diseño UX/UI</h3>
+                    <p>Creo interfaces limpias y accesibles que ofrecen experiencias memorables.</p>
+                </article>
+                <article class="servicio-card">
+                    <h3>Aplicaciones móviles</h3>
+                    <p>Desarrollo apps responsivas y adaptables para clientes que necesitan movilidad.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="acerca" id="acerca">
+            <div>
+                <h2>Sobre mí</h2>
+                <p>Soy un profesional orientado al detalle, con pasión por entregar proyectos bien estructurados, rendimiento óptimo y una experiencia de usuario clara. Trabajo con tecnologías modernas y siempre busco soluciones creativas para retos digitales.</p>
+                <ul>
+                    <li>Desarrollo Web Full Stack</li>
+                    <li>Diseño de interfaces y prototipos</li>
+                    <li>Integración de APIs y bases de datos</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="contacto-card">
+                <h2>Contacto</h2>
+                <p>Estoy disponible para nuevos proyectos y colaboraciones. Escribe directo por WhatsApp o revisa mi LinkedIn.</p>
+                <div class="contacto-enlaces">
+                    <a class="contacto-linea" href="https://wa.me/3531279557">WhatsApp: +353 127 9557</a>
+                    <a class="contacto-linea" href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer">LinkedIn</a>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
-        <p class="texto-footer">Desarrollado por Alejandro González Chávez</p>
+        <p>Portafolio profesional de Alejandro González Chávez</p>
     </footer>
 </body>
 
