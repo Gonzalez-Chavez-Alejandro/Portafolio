@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <title>WolfPlay</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Cabecera -->
+    <header>
+
+        <nav class="cabecera__container">
+
+            <h1 class="logo__item" href="#"></h1>
+
+            <div class="cabecera__buscar__item">
+                <form action="">
+                    <input type="search" placeholder="Buscar" id="buscar" class="buscar__input">
+                    <label for="buscar" class="buscar__label"></label>
+                </form>
+                <a href="#" class="cabecera__audio"></a>
+            </div>
+
+            <a href="../../proyectos.html" class="cabecera__boton">Ver proyectos</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Menu laterals -->
+
+    <aside class="menu__container">
+        <ul class="menu__lista">
+
+
+
+            <li>
+                <a class="menu__itens menu-filtro" data-categoria="musica" href="#">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Música</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__itens menu-filtro" data-categoria="favoritos" href="#">
+                    <i class="icono__like icono-item"></i>
+                    <span>Favoritos</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__itens menu-filtro" data-categoria="anime" href="#">
+                    <i class="fa-solid fa-dragon"></i>
+                    <span>Anime</span>
+                </a>
+            </li>
+
+        </ul>
+
+
+    </aside>
+
+    <!-- Sección superior -->
+    <section class="superior__seccion__container">
+        <a class="superior__item" data-categoria="todo" href="#">Todo</a>
+        <a class="superior__item" data-categoria="laravel" href="#">Laravel</a>
+        <a class="superior__item" data-categoria="figma" href="#">Figma</a>
+        <a class="superior__item" data-categoria="errores" href="#">Errores de laptop</a>
+        <a class="superior__item" data-categoria="vscode" href="#">VSCode</a>
+        <a class="superior__item" data-categoria="edteam" href="#">Edteam</a>
+    </section>
+
+    <!-- Videos -->
+    <ul class="videos__container" id="videosContainer">
+    </ul>
+
+
+    <!-- <SECCIÓN rodapié> -->
+    <footer class="rodapie__container">
+        <section>
+            <h2 class="rodapie__titulo">Edteam</h2>
+            <p class="rodapie__texto">Api</p>
+            <p>SQL</p>
+            <p>NoSQL</p>
+        </section>
+        <section>
+            <h2 class="rodapie__titulo">Laravel</h2>
+            <p class="rodapie__texto">Laravel 12 de Coders Free</p>
+            <p>55 video tutoriales</p>
+        </section>
+        <section>
+            <h2 class="rodapie__titulo">figma</h2>
+            <p class="rodapie__texto"></p>
+            <p>Resposinve Header</p>
+            <p>Guía Completa 2025 para Crear Botones en Figma: </p>
+            <p>Variantes, </p>
+            <p>Estados,</p>
+            <p>Buenas Prácticas</p>
+
+        </section>
+        <section>
+            <h2 class="rodapie__titulo">Laravel</h2>
+            <p class="rodapie__texto">Laravel 12 de Coders Free</p>
+        </section>
+
+
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

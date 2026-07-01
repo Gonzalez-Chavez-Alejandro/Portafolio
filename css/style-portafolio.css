@@ -175,6 +175,8 @@ main {
     transform: translateY(-2px);
 }
 
+
+
 .hero-destacados {
     display: grid;
     grid-template-columns: repeat(3, minmax(140px, 1fr));
@@ -548,6 +550,12 @@ main {
 @media (max-width: 520px) {
     .header {
         padding: 18px 4%;
+    }
+
+    .proyectos-cta .boton-principal {
+        top: 14px;
+        right: 12px;
+        padding: 10px 14px;
     }
 
     .hero-botones {

@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    "aside header"
+    "aside main";
+    grid-template-columns:auto 1fr;  /* 1fr = 100% o 1fr 1fr = 50% */
+}
+
+.cabecera.container{
+    grid-area: header; 
+}
+
+.menu-lateral{
+    grid-area: aside;
+}
+
+.principal.container{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+
