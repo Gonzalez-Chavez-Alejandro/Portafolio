@@ -362,6 +362,17 @@ main {
 .servicio-seccion { display: block; }
 .servicio-seccion.hidden { display: none; }
 
+.imagen-principal {
+    width: 40%;
+    height: auto;
+    border-radius: 50% 50%;
+    object-fit: cover;
+     object-position: center;
+    aspect-ratio: 1 / 1;
+    border: 4px solid var(--color-terciario);
+    box-shadow: 0 0 20px rgba(34, 212, 253, 0.3); /* Sombra azul */
+}
+
 /* Unificar listas con tarjetas: hace que los elementos de lista tengan aspecto de tarjeta */
 .certificados-list {
     list-style: none;
