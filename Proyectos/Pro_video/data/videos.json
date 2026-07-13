@@ -1,0 +1,17 @@
+[
+    {
+        "categoria": "laravel",
+        "titulo": "Descubre todo sobre ChatGPT",
+        "url": "https://www.youtube.com/embed/PwheldW6V98"
+    },
+    {
+        "categoria": "laravel",
+        "titulo": "ChatGPT e Ingeniería de Prompts",
+        "url": "https://www.youtube.com/embed/r5T2aO9YXb0"
+    },
+    {
+        "categoria": "javascript",
+        "titulo": "Inmersión Dev: Tus primeros pasos con Javascript",
+        "url": "https://www.youtube.com/embed/SAusS82-xQ0"
+    }
+]

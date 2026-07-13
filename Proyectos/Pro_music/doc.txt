@@ -1,0 +1,39 @@
+Aplicar correctamente el display grid para organizar grupos de elementos;
+Construir áreas en un diseño con grid-template-areas y grid-area;
+Definir el ancho de las columnas con grid-template-columns;
+Aplicar responsividad combinando grid y media queries.
+
+
+En la carpeta "grid", crea los archivos "menu.css" y "seccion.css";
+En el archivo index.css, enlaza los archivos creados dentro de la etiqueta head (antes de los archivos base.css y responsivo.css).
+En el archivo "index.css":
+
+Modifica la propiedad grid-template-columns del selector .grid-container a auto 1fr.
+En el archivo menu.css, organiza los elementos del menú lateral:
+
+En la clase .menu-lateral:
+Define la propiedad display como grid;
+Define la propiedad grid-template-rows como repeat(3, auto) 1fr;
+Define la propiedad row-gap como 2rem;
+En la clase .menu-lateral__logo:
+Define la propiedad justify-self como center.
+En el archivo seccion.css, organiza el conjunto de elementos de la sección "Reproducidos recientemente":
+
+En la clase .seccion:
+Define la propiedad display como grid;
+Define la propiedad align-items como end;
+Define la propiedad row-gap como 2rem;
+En las clases .secao-horizontal y .secao-vertical:
+Define la propiedad grid-template-rows como 70px auto.
+En el archivo responsivo.css, centra el logotipo solo para pantallas de celular:
+
+Modifica la propiedad justify-self del selector .cabecalho a center.
+
+Organizar elementos con Grid en una misma línea utilizando grid-auto-flow;
+Aplicar una barra de desplazamiento permitiendo la visualización de todos los elementos en un contenedor;
+Definir la posición inicial y final de un área de elementos con grid-column.
+
+Analizar contextos ideales para el uso de Grid y Flex;
+Aplicar display flex como alternativa al uso de Grid;
+Utilizar propiedades de cambio de eje en línea o columna con flex;
+Alinear elementos con flex.

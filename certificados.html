@@ -1,47 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Certificados | Alejandro González Chávez</title>
     <link rel="stylesheet" href="./css/style-portafolio.css">
 </head>
 
 <body>
-    <style>
-        .presentacion__contenido__texto a {
-            text-decoration: none;
-            color: #22D4FD;
-        }
-    </style>
-    <main class="presentacion">
-        <section class="presentacion-contenido">
-            <h1 class="presentacion-contenido-titulo">
-                Curriculum</h1>
-            <p class="presentacion-contenido-texto">
-                Presentacion y informaciones principales
+    <header class="header">
+        <div class="header-container">
+            <a class="brand" href="index.html">Alejandro G.</a>
+            <nav class="header-menu">
+                <a class="header-menu-link" href="index.html">Inicio</a>
+                <a class="header-menu-link" href="about.html">Sobre mí</a>
+                <a class="header-menu-link" href="certificados.html">Certificados</a>
+                <a class="header-menu-link" href="index.html#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-            </p>
-            <h2 class="presentacion-contenido-titulo">Experiencias</h2>
-            <p class="presentacion-contenido-texto">
-            <ul class="presentacion-contenido-texto">
-                <li> Empresa en que trabajó (2020 - 2021) - tú ocupación ahí </li>
-                <li> Empresa en que trabajó (2021 - 2023) - tú ocupación ahí </li>
-            </ul>
-            </p>
-            <h2 class="presentacion-contenido-titulo">Estudios</h2>
-            <div class="presentacion-contenido-texto">
-                <ul class="presentacion-contenido-texto">
-                    <li>Curso nombre - Alura Cursos <a href="linkdelacertificacion">con la certificación</a> </li>
-                    <li>Curso nombre - Alura Cursos <a href="linkdelacertificacion">con la certificación</a></li>
-                    <li>Curso nombre - Alura Cursos <a href="linkdelacertificacion">con la certificación</a></li>
-                </ul>
+    <main>
+        <section class="servicios">
+            <h2>Certificados</h2>
+            <p>Mis certificaciones, organizadas por área para mostrar mi formación en negocio,
+                agilidad, HTML/CSS, JavaScript y accesibilidad.</p>
+            <div class="certificados-filtros" aria-hidden="false">
+                <button class="filtro active" data-target="all">Todos</button>
+                <button class="filtro" data-target="negocios">Negocios</button>
+                <button class="filtro" data-target="agilidad">Agilidad</button>
+                <button class="filtro" data-target="htmlcss">HTML/CSS</button>
+                <button class="filtro" data-target="javascript">JavaScript</button>
+                <button class="filtro" data-target="react">React</button>
+                <button class="filtro" data-target="typescript">TypeScript</button>
+                <button class="filtro" data-target="accesibilidad">Accesibilidad</button>
             </div>
 
+            <div class="servicios-grid certificados-grid">
+                <article id="htmlcss" class="servicio-card servicio-seccion">
+                    <h3>HTML/CSS</h3>
+                    <ul class="certificados-list">
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html5-css3-primera-pagina-web/certificate"
+                                target="_blank" rel="noreferrer">HTML5/CSS3: primera página web</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html5-css3-posicionamiento-listas-navegacion/certificate"
+                                target="_blank" rel="noreferrer">Posicionamiento, listas y navegación</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html5-css3-formularios-tablas/certificate"
+                                target="_blank" rel="noreferrer">Formularios y tablas</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html5-css3-avanzando-css/certificate"
+                                target="_blank" rel="noreferrer">Avanzando en CSS</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html-css-desarrollo-estructura-archivos-tags/certificate"
+                                target="_blank" rel="noreferrer">HTML/CSS: estructura y etiquetas</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html-css-clases-posicionamiento-flexbox/certificate"
+                                target="_blank" rel="noreferrer">Clases, posición y Flexbox</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html-css-header-footer-variables-css/certificate"
+                                target="_blank" rel="noreferrer">Header, footer y variables CSS</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/html-css-trabajando-responsividad-publicacion-proyectos/certificate"
+                                target="_blank" rel="noreferrer">Responsividad y publicación</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/flexbox-posicione-elementos-pantalla/certificate"
+                                target="_blank" rel="noreferrer">Flexbox: posiciona elementos</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/ia-generativa-front-end-trabajando-semantica-html/certificate"
+                                target="_blank" rel="noreferrer">IA generativa Front-End y semántica HTML</a></li>
+                    </ul>
+                    <div class="certificados-inline">
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/javascript-web-validacion-formularios-html5/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Validación de formularios HTML5</h4>
+                        </a>
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/layouts-responsivos-layouts-mobile/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Layouts responsivos (mobile)</h4>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="javascript" class="servicio-card servicio-seccion">
+                    <h3>JavaScript</h3>
+                    <ul class="certificados-list">
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/javascript-primeros-pasos-lenguaje/certificate"
+                                target="_blank" rel="noreferrer">JavaScript: primeros pasos</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/javascript-tipos-variables-funciones/certificate"
+                                target="_blank" rel="noreferrer">Tipos, variables y funciones</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/javascript-arrays/certificate"
+                                target="_blank" rel="noreferrer">Arrays en JavaScript</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/javascript-introduccion-orientacion-objetos/certificate"
+                                target="_blank" rel="noreferrer">Introducción a orientación a objetos</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/javascript-herencia-interfaces-orientacion-objetos/certificate"
+                                target="_blank" rel="noreferrer">Herencia, interfaces y OOP</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/js-web-manipulacion-dom-javascript/certificate"
+                                target="_blank" rel="noreferrer">Manipulación del DOM</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/js-web-crud-javascript-asincrono/certificate"
+                                target="_blank" rel="noreferrer">CRUD web y JavaScript asíncrono</a></li>
+                    </ul>
+                    <div class="certificados-inline">
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/logica-de-programacion-conceptos-primordiales/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Lógica de programación: conceptos</h4>
+                        </a>
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/logica-de-programacion-juegos-animaciones/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Lógica: juegos y animaciones</h4>
+                        </a>
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/logica-de-programacion-primeros-pasos/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Lógica: primeros pasos</h4>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="otros" class="servicio-card servicio-seccion">
+                    <h3>Otros certificados (imágenes)</h3>
+                    <div class="otros-certificados">
+                        <figure class="certificado-fig">
+                            <img class="certificado-image" src="./img/cert_bigschool.jpg"
+                                alt="Certificado de iniciación al Desarrollo con IA - BIG school">
+                            <figcaption>Certificado de iniciación al Desarrollo con IA — BIG school</figcaption>
+                        </figure>
+                        <figure class="certificado-fig">
+                            <img class="certificado-image" src="./img/cert_santander.jpg"
+                                alt="Gestión de Proyectos y Fundamentos de metodología Agile - Santander Open Academy">
+                            <figcaption>Gestión de Proyectos y Fundamentos de metodología Agile — Santander Open Academy
+                            </figcaption>
+                        </figure>
+                    </div>
+                </article>
+                <article id="typescript" class="servicio-card servicio-seccion">
+                    <h3>TypeScript</h3>
+                    <div class="certificados-inline">
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/typescript-aplicar-orientacion-objetos-front-end/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>TypeScript: OOP aplicado al front-end</h4>
+                        </a>
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/typescript-paradigma-funcional-front-end/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>TypeScript: paradigma funcional</h4>
+                        </a>
+                    </div>
+                </article>
+                <article id="react" class="servicio-card servicio-seccion">
+                    <h3>React</h3>
+                    <div class="certificados-inline">
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/react-desarrollando-javascript/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>React: desarrollando con JavaScript</h4>
+                        </a>
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/react-hooks-contextos-buenas-practicas/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>React Hooks: buenas prácticas</h4>
+                        </a>
+                    </div>
+                </article>
+
+
+
+                <article id="accesibilidad" class="servicio-card servicio-seccion">
+                    <h3>Accesibilidad y herramientas</h3>
+                    <ul class="certificados-list">
+                        <li><a href="https://app.aluracursos.com/certificate/a17jul/accesibilidad-web-diseno-inclusivo"
+                                target="_blank" rel="noreferrer">Accesibilidad web y diseño inclusivo</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/arquitectura-css-descomplicando-los-problemas/certificate"
+                                target="_blank" rel="noreferrer">Arquitectura CSS: descomplicando los problemas</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/git-github-control-version/certificate"
+                                target="_blank" rel="noreferrer">Git y GitHub: control de versión</a></li>
+                    </ul>
+                </article>
+
+                <!-- Moved Negocios and Agilidad to the end as requested -->
+                <article id="negocios" class="servicio-card servicio-seccion">
+                    <h3>Negocios y productividad</h3>
+                    <ul class="certificados-list">
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/business-model-canvas-parte-1-modelo-poderoso-negocio/certificate"
+                                target="_blank" rel="noreferrer">Business Model Canvas: parte 1</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/business-model-canvas-parte-2-modelo-negocios/certificate"
+                                target="_blank" rel="noreferrer">Business Model Canvas: parte 2</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/desarrollo-carrera-demanda-mercado/certificate"
+                                target="_blank" rel="noreferrer">Desarrollo de carrera y demanda de mercado</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/emprendimiento-idea-plan-negocios/certificate"
+                                target="_blank" rel="noreferrer">Emprendimiento: idea y plan de negocios</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/eficacia-habitos-proactividad/certificate"
+                                target="_blank" rel="noreferrer">Eficacia, hábitos y proactividad</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/foco-habito-dia-a-dia/certificate"
+                                target="_blank" rel="noreferrer">Foco: hábito día a día</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/habitos-productivo-metas-personales/certificate"
+                                target="_blank" rel="noreferrer">Hábitos productivos y metas personales</a></li>
+                    </ul>
+                    <div class="certificados-inline">
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/pitch-entrevistas-presentaciones-impactantes/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Pitch: entrevistas y presentaciones</h4>
+                        </a>
+                    </div>
+                </article>
+
+                <article id="agilidad" class="servicio-card servicio-seccion">
+                    <h3>Agilidad y liderazgo</h3>
+                    <ul class="certificados-list">
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/fundamentos-agilidad-primeros-pasos-transformacion-agil/certificate"
+                                target="_blank" rel="noreferrer">Fundamentos de agilidad</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/gestion-agil-liderando-cambio/certificate"
+                                target="_blank" rel="noreferrer">Gestión ágil y liderando el cambio</a></li>
+                        <li><a href="https://app.aluracursos.com/user/a17jul/course/git-github-control-version/certificate"
+                                target="_blank" rel="noreferrer">Git y GitHub: control de versión</a></li>
+                    </ul>
+                    <div class="certificados-inline">
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/kanban-analisis-implementacion/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Kanban: análisis e implementación</h4>
+                        </a>
+                        <a class="certificado-card"
+                            href="https://app.aluracursos.com/user/a17jul/course/empresa-agil-introduciendo-business-agility-organizaciones/certificate"
+                            target="_blank" rel="noreferrer">
+                            <h4>Empresa ágil: introducción a Business Agility</h4>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
         </section>
-        <img src="./assets/Imagem.png" alt="Foto de Ana García desarrolando un proyecto">
     </main>
+
+    <!-- filtro script -->
+    <script>
+        (function () {
+            const filtros = document.querySelectorAll('.filtro');
+            const secciones = document.querySelectorAll('.servicio-seccion');
+
+            function setActive(target) {
+                filtros.forEach(b => b.classList.toggle('active', b.dataset.target === target));
+                secciones.forEach(s => {
+                    if (target === 'all') s.classList.remove('hidden');
+                    else s.classList.toggle('hidden', s.id !== target);
+                });
+            }
+
+            filtros.forEach(b => b.addEventListener('click', () => setActive(b.dataset.target)));
+            // default
+            setActive('all');
+        })();
+    </script>
+
+    <!-- lightbox modal markup -->
+    <div id="lightbox" class="lightbox hidden" aria-hidden="true">
+        <div class="lightbox-backdrop"></div>
+        <div class="lightbox-content" role="dialog" aria-modal="true">
+            <button class="lightbox-close" aria-label="Cerrar">×</button>
+            <img class="lightbox-img" src="" alt="">
+            <p class="lightbox-caption"></p>
+        </div>
+    </div>
+
+    <!-- lightbox script -->
+    <script>
+        (function () {
+            const lightbox = document.getElementById('lightbox');
+            const lbImg = lightbox.querySelector('.lightbox-img');
+            const lbCaption = lightbox.querySelector('.lightbox-caption');
+            const closeBtn = lightbox.querySelector('.lightbox-close');
+
+            function openLightbox(src, alt, caption) {
+                lbImg.src = src;
+                lbImg.alt = alt || '';
+                lbCaption.textContent = caption || '';
+                lightbox.classList.remove('hidden');
+                lightbox.setAttribute('aria-hidden', 'false');
+            }
+
+            function closeLightbox() {
+                lightbox.classList.add('hidden');
+                lightbox.setAttribute('aria-hidden', 'true');
+                lbImg.src = '';
+            }
+
+            document.querySelectorAll('.certificado-image').forEach(img => {
+                img.style.cursor = 'zoom-in';
+                img.addEventListener('click', () => {
+                    const fig = img.closest('figure');
+                    const caption = fig ? (fig.querySelector('figcaption')?.innerText || img.alt) : img.alt;
+                    openLightbox(img.src, img.alt, caption);
+                });
+            });
+
+            closeBtn.addEventListener('click', closeLightbox);
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox || e.target.classList.contains('lightbox-backdrop')) closeLightbox();
+            });
+            document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+        })();
+    </script>
+
+    <footer class="footer">
+        <p>Portafolio profesional de Alejandro González Chávez</p>
+    </footer>
 </body>
 
 </html>

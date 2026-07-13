@@ -1,0 +1,228 @@
+/*Reset*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0rem;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+:root {
+    --color-texto-principal: #ffffff;
+    --fuente-textos: 'Open Sans', sans-serif;
+    --azul-neon: #2BDEFD;
+    --azul-fondo: #01080E;
+    --gris-claro: #999;
+    --gris-oscuro: #666;
+    --gris: rgba(196, 196, 196, 0.2);
+    --gradiente: linear-gradient(53deg, #072041 0%, #041833 50%, #154580 100%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-texto-principal);
+    background: var(--gradiente);
+    font-family: var(--fuente-textos);
+}
+
+main {
+    margin-bottom: 3.43rem;
+}
+
+.container {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+/*Aside*/
+
+.menu-lateral {
+    background-color: var(--azul-fondo);
+    padding: 2.5rem .5rem 0;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+}
+
+.menu-lateral li {
+    padding-bottom: 1.5rem;
+}
+
+.menu-lateral__link::before  {
+    padding-left: 1rem;
+    padding-right: .5rem;
+    vertical-align: middle;
+}
+
+.menu-lateral__link {
+    font-family: var(--fuente-textos);
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    margin-bottom: .5rem;
+    white-space: nowrap;
+}
+
+.ativo {
+    color: var(--azul-neon);
+}
+
+.menu-lateral__link button img {
+    padding: 0 .5rem;
+}
+
+.menu-lateral__playlist {
+    padding-left: 1rem;
+    user-select: none;
+}
+
+/*Header*/
+.cabecera {
+    padding-top: 2.5rem;
+}
+
+.cabecera__boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background-color: #154580;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.cabecera__boton:hover {
+    background-color: #3970BE;
+    transform: translateY(-1px);
+}
+
+.cabecera__boton:not(:last-of-type) {
+    margin-right: 1rem;
+}
+
+/*Main*/
+.main_volver_a_proyectos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    width: fit-content;
+    margin: 1rem 0 1.5rem 0;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #2BDEFD 0%, #1aa7d8 100%);
+    color: #01080E;
+    font-weight: 700;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main_volver_a_proyectos:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/*Estilos compartidos por elementos presentes en la sección horizontal y elementos en la sección vertical*/
+.seccion__titulo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    user-select: none;
+    margin-top: 1rem;
+}
+
+.tarjeta { 
+    background: var(--gris);
+    border-radius: .5rem;
+}
+
+.tarjeta__titulo {
+    font-weight: 700;
+    line-height: 1.35rem;
+}
+
+/*Sección horizontal*/
+
+.seccion-horizontal .tarjeta {
+    overflow: hidden;
+}
+
+.seccion-horizontal .tarjeta__imagen {
+    height: 4.58rem;
+}
+
+.seccion-horizontal .tarjeta__player {
+    width: 10.25rem;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+.seccion-horizontal .tarjeta__boton {
+    padding-right: .75rem;
+}
+
+/*Sección vertical*/
+.seccion-vertical .tarjeta {
+    padding: 1rem;
+}
+
+.seccion-vertical .tarjeta__imagen {
+    height: 9.75rem;
+    margin-bottom: .5rem;
+    object-fit: contain;
+}
+
+.seccion-vertical .tarjeta__subtitulo {
+    margin-top: .75rem;
+}
+
+.seccion__tarjetas::-webkit-scrollbar {
+    height: .5rem;
+  }
+  
+  .seccion__tarjetas::-webkit-scrollbar-thumb {
+    background-color: var(--gris-claro);
+    border-radius: .5rem;
+  }
+  
+  .seccion__tarjetas::-webkit-scrollbar-thumb:hover {
+    background-color: var(--gris-oscuro);
+  }
+  
+  .seccion__tarjetas::-webkit-scrollbar-track {
+    background-color: var(--gradiente);
+  } 
+ 
+/*Navbar*/
+.navbar {
+    background-color: var(--azul-fondo);
+    opacity: 0.9;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.navbar__items {
+    width: 80%;
+    margin: .5rem auto;
+}
+
+.navbar__item {
+    font-size: .75rem;
+}
+
+.navbar__item::before {
+    display: block;
+    margin-bottom: .25rem;
+}

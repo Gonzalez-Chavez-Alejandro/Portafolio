@@ -1,0 +1,110 @@
+[
+    {
+        "categoria": "laravel",
+        "titulo": "Actualizacion del curso a Laravel 12",
+        "canal": "Coders Free",
+        "fecha": "hace 2 semanas",
+        "favorito": true,
+        "url": "https://www.youtube.com/embed/FMsXJ84SRr4?si=eamC8Pcd67OHQNM0",
+        "imagen": "./img/videos/edteam.jpg"
+    },
+    {
+        "categoria": "edteam",
+        "titulo": "¿Qué es una API? - La mejor explicación en español",
+        "canal": "EDteam",
+        "fecha": "hace 3 días",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/u2Ms34GE14U?si=T3RWDKM3atnkz7bN",
+        "imagen": "./img/videos/Ellipse 11.png"
+    },
+    {
+        "categoria": "edteam",
+        "titulo": "¿Qué son las BASES DE DATOS? - La mejor explicación en español",
+        "canal": "EDteam",
+        "fecha": "hace 3 días",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/knVwokXITGI?si=ud9csWgkatV0PIjr",
+        "imagen": "./img/videos/Ellipse 11.png"
+    },
+    {
+        "categoria": "vscode",
+        "titulo": "VISUAL STUDIO CODE: Tutorial para principiantes",
+        "canal": "MoureDev by Brais Moure",
+        "fecha": "hace 5 días",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/CxF3ykWP1H4?si=Fcs35rcg31AA50q-",
+        "imagen": "./img/videos/Ellipse 11.png"
+    },
+    {
+        "categoria": "figma",
+        "titulo": "How to Make a Responsive Header in Figma | UI Design Tutorial for Beginners",
+        "canal": "Webcode",
+        "fecha": "hace 1 semana",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/Kmu7D5IWY1E?si=JT0Efh6nmN5jFP64",
+        "imagen": "./img/videos/Ellipse 11.png"
+    },
+    {
+        "categoria": "figma",
+        "titulo": "Guía Completa 2025 para Crear Botones en Figma: Variantes, Estados y Buenas Prácticas",
+        "canal": "Aldi Gonzalez ",
+        "fecha": "hace 3 días",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/NQi_D8aZGP0?si=Tni1Xy9qYO-IDUen",
+        "imagen": "./img/videos/figma.png"
+    },
+    {
+        "categoria": "figma",
+        "titulo": "Tree Menu Animation in Figma",
+        "canal": "UX World",
+        "fecha": "hace 3 días",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/AiBtmE_B2g0?si=6CSycjZhRDpqp5AP",
+        "imagen": "./img/videos/figma.png"
+    },
+    {
+        "categoria": "figma",
+        "titulo": "Figma Dropdown Menu Animation | Interactive UI Tutorial",
+        "canal": "Maks Klod",
+        "fecha": "hace 5 días",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/hRUwnWFeA1o?si=zaSdTDW2L2qx4qFv",
+        "imagen": "./img/videos/figma.png"
+    },
+    {
+        "categoria": "anime",
+        "titulo": "Shangri-La Frontier",
+        "canal": "Merineitor",
+        "fecha": "hace 3 días",
+        "favorito": true,
+        "url": "https://www.youtube.com/embed/rdIn-tcSI7M?si=JnW3oGZKZ4dRaBnA",
+        "imagen": "./img/videos/Ellipse 11.png"
+    },
+    {
+        "categoria": "musica",
+        "titulo": "Estrellas Que Me Dan Vida - El Planeta Del Tesoro LaLey",
+        "canal": "floopa music and lyrics",
+        "fecha": "hace 3 días",
+        "favorito": true,
+        "url": "https://www.youtube.com/embed/7nACG_07xxY?si=kJjTcHSddAvDuEdq",
+        "imagen": "./img/videos/youtube.png"
+    },
+    {
+        "categoria": "musica",
+        "titulo": "Cover español _SMELLS LIKE CHERRY FULL VERSIÓN// METAL FAMILY",
+        "canal": "Cat R",
+        "fecha": "hace 3 días",
+        "favorito": false,
+        "url": "https://www.youtube.com/embed/dl2DXFN1bUY?si=5RpLP4KLKRmBACAa",
+        "imagen": "./img/videos/youtube.png"
+    },
+    {
+        "categoria": "musica",
+        "titulo": "Smells Like Cherry - Metal Family🍒",
+        "canal": "Moonlight",
+        "fecha": "hace 3 días",
+        "favorito": true,
+        "url": "https://www.youtube.com/embed/AJJZDB1rk7g?si=IPqjuxnYEBK1tVtn",
+        "imagen": "./img/videos/youtube.png"
+    }
+]
